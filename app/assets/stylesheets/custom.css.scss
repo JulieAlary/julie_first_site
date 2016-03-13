@@ -1,7 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* universal */
+/*
+    1 =>  Universal
+    2 =>  Typography
+    3 =>  Header
+    4 =>  Footer
+    5 =>  Page Contact
+    6 =>  Navigation  
+    7 =>  Page Parcours/slide
+    8 =>  Page Parcours/logo langage
+
+
+/*--------------------------- universal----------------------------------- */
 
 body {
   padding-top: 60px;
@@ -17,25 +28,20 @@ textarea {
 
 .center {
   text-align: center;
+    h1 {
+      margin-bottom: 10px;
+    }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
-
-/* typography */
-
+/* ----------------------------typography--------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
-
 h1 {
-  font-size: 3em;
+  font-size: 3.0em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
   text-align: center;
 }
-
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -44,31 +50,14 @@ h2 {
   font-weight: normal;
   color: #777;
 }
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+h3 {
   text-align: center;
+  text-shadow: 1px 2px #42BFD1;
+  font-size: 2.4em;
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
+h5 {
   text-align: center;
-  font-weight: normal;
-  color: #777;
 }
 
 p {
@@ -77,7 +66,7 @@ p {
 }
 
 
-/* header */
+/* -------------------------header---------------------------------------- */
 
 #logo {
   float: left;
@@ -87,40 +76,35 @@ p {
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
-  font-weight: bold;
-}
-
+  font-weight: bold;}
+    
 #logo:hover {
   color: #fff;
   text-decoration: none;
-}
+}    
 
-/* footer */
-
+/*----------------------------- footer -----------------------------------*/
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #222222;
+  color: #42BFD1;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
-
 footer a {
-  color: #555;
+  color: #42BFD1;
 }
-
 footer a:hover {
-  color: #222;
+  color: black;
+  text-decoration: none;
 }
-
 footer small {
-  float: left;
+  float: center;
 }
-
 footer ul {
   float: right;
   list-style: none;
 }
-
 footer ul li {
   float: left;
   margin-left: 15px;
@@ -129,30 +113,139 @@ footer ul li {
 /*---------------------------Page contact ------------------------------*/
 .bground {
   background-image: url('white_blue.jpg');
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+  border-radius: 10px 10px 0px 0px;
   width: 100%;
   height: 1100px;
-  margin-top: -140px;
     .row {
-      padding-top: 300px;
+      padding-top: 130px;
     }
   }
+
 .row img {
   width:300px;
 }
 
 #github {
   padding-top: 90px;
-  padding-left: 50px;
-  width: 250px;
+  padding-left: 40px;
+  width: 300px;
 }
 
 #bitbucket {
   width: 250px;
-  padding-left: 50px;
-  padding-top: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 
+.twitter-timeline {
+  max-height: 570px;
+  border-radius: 20px;
+}
 
+div.col-md-4:nth-child(1) {
+  margin-top: 10px ;
+}
 
+#contact_head {
+  border: 1px solid black;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #222222;
+  color: #42BFD1;
+}
+/*------------------navigation------------------------------------------*/
+.navbar-inverse{
+  
+  border: hidden;
+  opacity:0.5;
+}
+#logo{
+  color: #42BFD1;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #42BFD1; 
+}
 
+/*-----------------sliding bottom page parcours---------------------------*/
+.img_open {
+  display: block;
+  margin:auto;
+  width:100px;
+  border-radius: 5px;
+}
+.img_codecademy {
+  display: block;
+  margin:auto;
+  width:100px;
+  border-radius: 5px;
+}
+
+.panel, .flip, .panel2, .flip2, .panel3, .flip3 {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px black;
+    max-width: 600px;
+    background-color: #222222;
+    color: #42BFD1;
+}
+.panel, .panel2, .panel3 {
+    padding: 50px;
+    display: none;
+    margin-bottom: 10px;
+}
+.flip, .flip2, .flip3 {
+   border-radius: 10px 10px 0px 0px;
+   margin-bottom: 10px;
+}
+/*-------------------logo langages page contact---------------------------*/
+.logo_javascript{
+  max-width: 110px;
+  margin-top: -5px;
+  height: 110px;
+  
+}
+.logo_html5 {
+  max-width: 100px;
+  
+}
+.logo_css3 {
+  max-width: 100px;
+  
+}
+.logo_jquery {
+  max-width: 100px;
+  margin-top: 30px;
+  
+}
+.logo_php5 {
+  max-width: 80px;
+  max-height: 110px;
+}
+.logo_ruby {
+  max-width: 100px;
+  margin-top: 30px;
+}
+.logo_ror {
+  max-width: 100px;
+  margin-top: 30px;
+  max-height: 100px;
+}
+.logo_git {
+  max-width: 100px;
+  margin-top: 30px;
+}
+div.row:nth-child(6) {
+  text-align: center;
+}
+.section_logo {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+.section_open {
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+/*---------------------------------------------------------------------*/
 
