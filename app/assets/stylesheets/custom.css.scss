@@ -8,8 +8,8 @@
     4 =>  Footer
     5 =>  Page Contact
     6 =>  Navigation  
-    7 =>  Page Parcours/slide
-    8 =>  Page Parcours/logo langage
+    7 =>  Page Parcours/section openclassroom
+    8 =>  Page Parcours/section codecademy
 
 
 /*--------------------------- universal----------------------------------- */
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 3.0em;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   text-align: center;
 }
 h2 {
@@ -52,7 +52,6 @@ h2 {
 }
 h3 {
   text-align: center;
-  text-shadow: 1px 2px #42BFD1;
   font-size: 2.4em;
 }
 
@@ -64,8 +63,6 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
-
 /* -------------------------header---------------------------------------- */
 
 #logo {
@@ -79,7 +76,7 @@ p {
   font-weight: bold;}
     
 #logo:hover {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }    
 
@@ -138,11 +135,6 @@ footer ul li {
   padding-top: 30px;
 }
 
-.twitter-timeline {
-  max-height: 570px;
-  border-radius: 20px;
-}
-
 div.col-md-4:nth-child(1) {
   margin-top: 10px ;
 }
@@ -153,25 +145,62 @@ div.col-md-4:nth-child(1) {
   background-color: #222222;
   color: #42BFD1;
 }
+
+.panel4, .flip4 {
+    padding: 5px;
+    text-align: center;
+    color: #42BFD1;
+}
+.panel4 {
+    display: none;
+    margin-top: -40px;
+}
+.flip4 {
+   margin-top:-10px;
+}
+
 /*------------------navigation------------------------------------------*/
 .navbar-inverse{
-  
   border: hidden;
-  opacity:0.5;
+  background-color: #fff;
+  opacity: 0.8;
 }
 #logo{
   color: #42BFD1;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #42BFD1; 
+  letter-spacing: 3px;
+  padding: 20px;
 }
 
-/*-----------------sliding bottom page parcours---------------------------*/
+.nav > li:nth-child(1) > a:hover{
+  color:black;
+}
+.nav > li:nth-child(2) > a:hover{
+  color:black;
+}
+.nav > li:nth-child(3) > a:hover{
+  color:black;
+}
+.nav > li:nth-child(4) > a:hover{
+  color:black;
+}
+
+/*-----------------section openClassRoom-----------------------------------*/
+.section_open > h3:nth-child(1){
+  background-color: #222222;
+  color:#42BFD1;
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+}
+
 .img_open {
   display: block;
   margin:auto;
   width:100px;
   border-radius: 5px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
 .img_codecademy {
   display: block;
@@ -187,6 +216,7 @@ div.col-md-4:nth-child(1) {
     max-width: 600px;
     background-color: #222222;
     color: #42BFD1;
+   
 }
 .panel, .panel2, .panel3 {
     padding: 50px;
@@ -194,10 +224,26 @@ div.col-md-4:nth-child(1) {
     margin-bottom: 10px;
 }
 .flip, .flip2, .flip3 {
-   border-radius: 10px 10px 0px 0px;
+   border-radius: 5px 5px 0px 0px;
    margin-bottom: 10px;
 }
-/*-------------------logo langages page contact---------------------------*/
+.section_open {
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+
+/*-------------------logo langages page parcours---------------------------*/
+.section_logo > h3:nth-child(1){
+  background-color: #222222;
+  color:#42BFD1;
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+}
+.img_codecademy{
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
 .logo_javascript{
   max-width: 110px;
   margin-top: -5px;
@@ -242,10 +288,11 @@ div.row:nth-child(6) {
   border-radius: 10px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
-.section_open {
-  background-color: white;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+.foot_codecademy{
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #222222;
+  color: #42BFD1;
+  height:30px;
 }
 /*---------------------------------------------------------------------*/
-
