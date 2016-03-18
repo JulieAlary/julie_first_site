@@ -2,14 +2,16 @@
 @import "bootstrap";
 
 /*
-    1 =>  Universal
-    2 =>  Typography
-    3 =>  Header
-    4 =>  Footer
-    5 =>  Page Contact
-    6 =>  Navigation  
-    7 =>  Page Parcours/section openclassroom
-    8 =>  Page Parcours/section codecademy
+    1   =>  Universal
+    2   =>  Typography
+    3   =>  Header
+    4   =>  Footer
+    5   =>  Page Contact
+    6   =>  Navigation  
+    7   =>  Page Parcours/section openclassroom
+    8   =>  Page Parcours/section codecademy
+    9   =>  Page Portfolio
+    10  =>  Page home
 
 
 /*--------------------------- universal----------------------------------- */
@@ -144,6 +146,7 @@ div.col-md-4:nth-child(1) {
   border-radius: 10px 10px 0px 0px;
   background-color: #222222;
   color: #42BFD1;
+  height:190px;
 }
 
 .panel4, .flip4 {
@@ -295,4 +298,39 @@ div.row:nth-child(6) {
   color: #42BFD1;
   height:30px;
 }
-/*---------------------------------------------------------------------*/
+/*-----------------Page Portfolio------------------------------------------------*/
+.container1{
+  width: 100%;
+  height: 1100px;
+  background-color: white;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+  border-radius: 10px 10px 0px 0px;
+}
+#portfolio_header{
+  border: 1px solid black;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #222222 ;
+  color: #42BFD1;
+  height: 190px;
+}
+.img_mystere{
+  border-radius: 10px 0px 0px 0px;
+}
+/*-----------------------Page home----------------------------------------------*/
+.jumbotron {
+  height: 800px;
+  background: url(https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/54.JPG)
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+  border-radius: 10px 10px 0px 0px;
+    h1 {
+      color:#42BFD1;
+      margin-top: 180px;
+      text-transform: uppercase;
+      text-shadow:5px 5px 10px black
+    }
+  }
