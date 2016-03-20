@@ -117,7 +117,8 @@ footer ul li {
 
 /*---------------------------Page contact ------------------------------*/
 .bground {
-  background-image: url('white_blue.jpg');
+  
+  background-image: url('/images/white_blue.jpg');
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
   border-radius: 10px 10px 0px 0px;
   width: 100%;
@@ -235,7 +236,7 @@ div.col-md-4:nth-child(1) {
   width: 150px;
 }
 .panel5 {
-  background: url(dark_background)no-repeat fixed;
+  background: url('/images/dark_background.jpg')no-repeat fixed;
   color: #42BFD1;
   text-shadow:5px 5px 10px black;
   height: 1200px;
@@ -447,7 +448,7 @@ div.row:nth-child(6) {
                   /***-------Parcours------*****/
   .mon_parcours {
     height:400px;
-    background: url(road)
+    background: url('/images/road.jpg')
     no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -483,7 +484,7 @@ div.row:nth-child(6) {
 }
 .outil {
   margin-top: -20px;
-  background: url(bois.jpeg)
+  background: url('/images/bois.jpeg')
   no-repeat center center fixed; 
   height:600px;
   -webkit-background-size: cover;
