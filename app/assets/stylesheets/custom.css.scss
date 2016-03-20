@@ -18,6 +18,7 @@
 
 body {
   padding-top: 60px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 section {
@@ -56,6 +57,10 @@ h3 {
   text-align: center;
   font-size: 2.4em;
 }
+h4 {
+  font-size:1.8em;
+  padding-top: 20px;
+}
 
 h5 {
   text-align: center;
@@ -64,6 +69,7 @@ h5 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-transform: lowercase;
 }
 /* -------------------------header---------------------------------------- */
 
@@ -190,7 +196,100 @@ div.col-md-4:nth-child(1) {
   color:black;
 }
 
-/*-----------------section openClassRoom-----------------------------------*/
+/*****-------------------Pages parcours--------------------------**************/
+
+              /**---------partie cv----------***/
+                    /*param general*/
+
+.section_cv  h3 {
+  background-color: #222222;
+  color:#42BFD1;
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+}
+.section_cv {
+  border-radius: 10px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+.foot_section {
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #222222;
+  color: #42BFD1;
+  height:30px;
+}
+                      /*mise en page*/
+.panel5, .flip5 {
+    padding: 5px;
+    text-align: center;
+    color: #42BFD1;
+}
+.panel5 {
+    display: none;
+    margin-top: -40px;
+}
+.flip5 {
+   margin-top:-10px;
+}
+.logo_cv {
+  width: 150px;
+}
+.panel5 {
+  background: url(dark_background)no-repeat fixed;
+  color: #42BFD1;
+  text-shadow:5px 5px 10px black;
+  height: 1200px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+}
+.panel5 .col-md-4 p {
+  text-transform: lowercase;
+  text-shadow:5px 5px 10px #42BFD1;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color : black;
+
+}
+.panel5 .col-md-4 h6 {
+  color:black;
+  font-size:1.2em;
+}
+.panel5 h4{
+  text-shadow:5px 5px 10px #42BFD1;
+  color:black;
+  padding-bottom: 20px;
+}
+.deleguee {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color:black;
+  text-shadow:5px 5px 10px #42BFD1;
+}
+.col-md-4 .exprience h4{
+  margin-top: 20px;
+}
+.col-md-4 .divers h4 {
+  margin-top: 27px;
+}
+.internity {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color:black;
+  text-shadow:5px 5px 10px #42BFD1
+}
+.croissanterie {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+ color:black;
+  text-shadow:5px 5px 10px #42BFD1
+}
+.mcdo {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color:black;
+  text-shadow:5px 5px 10px #42BFD1
+}
+.autre {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color:black;
+  text-shadow:5px 5px 10px #42BFD1
+}
+              /*--------------section openClassRoom--------------*/
 .section_open > h3:nth-child(1){
   background-color: #222222;
   color:#42BFD1;
@@ -231,12 +330,11 @@ div.col-md-4:nth-child(1) {
    margin-bottom: 10px;
 }
 .section_open {
-  background-color: white;
   border-radius: 10px 10px 0px 0px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
 
-/*-------------------logo langages page parcours---------------------------*/
+                    /*-----------logo langages page parcours----------*/
 .section_logo > h3:nth-child(1){
   background-color: #222222;
   color:#42BFD1;
@@ -387,7 +485,7 @@ div.row:nth-child(6) {
   margin-top: -20px;
   background: url(bois.jpeg)
   no-repeat center center fixed; 
-  height:500px;
+  height:600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -415,3 +513,7 @@ div.row:nth-child(6) {
   font-weight: bold;
 }
 
+.logo_boostrap {
+  max-width: 100px;
+}
+/*-------------test*/
