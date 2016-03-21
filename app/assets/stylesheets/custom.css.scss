@@ -518,3 +518,58 @@ div.row:nth-child(6) {
   max-width: 100px;
 }
 /*-------------test*/
+/*@keyframes invader {
+    0% {
+        propriété_à_animer: valeur_initiale;
+    }
+    50% {
+        propriété_à_animer: valeur_intermédiaire;
+    }
+    100% {
+        propriété_à_animer: valeur_finale;
+    }
+}
+#invader {
+    animation-name: invader;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}*/
+
+/*----------------------------------------------test2-------------------------------------*/
+#invaders {
+    position: absolute;
+    -webkit-animation: invaders 10s 1 ease-in forwards;
+    animation: invaders 10s 1 ease-in forwards;
+    animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        animation-name: invaders;
+}
+@keyframes invaders{
+0% {
+    bottom: -10%;
+    left: 40%;
+    -webkit-transform: rotate(-10deg);
+}
+40% {
+    transform: rotate(0deg);
+}
+60% {
+    transform: rotate(-8deg);
+}
+80% {
+    transform: rotate(0deg);
+}
+100% {
+    bottom: 110%;
+    left: 40%;
+    transform: rotate(8deg);
+}
+}
+
+
+
