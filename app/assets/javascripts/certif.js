@@ -14,7 +14,7 @@ $(document).ready(function(){
         $(".panel3").slideToggle("slow");
     });
 });
-//-------------------------------------------------------------------//
+//------------incone twitter-----------------//
 $(document).ready(function(){
     $(".flip4").click(function(){
         $(".panel4").slideToggle("slow");
