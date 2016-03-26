@@ -17,8 +17,9 @@
 /*--------------------------- universal----------------------------------- */
 
 body {
-  padding-top: 60px;
+  padding-top: 40px;
   font-family: 'Ubuntu', sans-serif;
+  width: 100%;
 }
 
 section {
@@ -91,10 +92,10 @@ p {
 /*----------------------------- footer -----------------------------------*/
 footer {
   border: 1px solid black;
-  border-radius: 0px 0px 10px 10px;
   background-color: #222222;
   color: #42BFD1;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  height:50px;
 }
 footer a {
   color: #42BFD1;
@@ -172,8 +173,8 @@ div.col-md-4:nth-child(1) {
 /*------------------navigation------------------------------------------*/
 .navbar-inverse{
   border: hidden;
-  background-color: #fff;
-  opacity: 0.8;
+  background-color: #222222;
+  opacity: 0.9;
 }
 #logo{
   color: #42BFD1;
@@ -204,7 +205,7 @@ div.col-md-4:nth-child(1) {
 
 .section_cv  h3 {
   background-color: #222222;
-  color:#42BFD1;
+  color: #42BFD1;
   border-radius: 10px 10px 0px 0px;
   height: 40px;
 }
@@ -244,7 +245,7 @@ div.col-md-4:nth-child(1) {
   margin-top: 10px;
 }
 .panel5 .col-md-4 p {
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-shadow:5px 5px 10px #42BFD1;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
   color : black;
@@ -399,22 +400,144 @@ div.row:nth-child(6) {
 }
 /*-----------------Page Portfolio------------------------------------------------*/
 .container1{
-  width: 100%;
-  height: 1100px;
-  background-color: white;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
-  border-radius: 10px 10px 0px 0px;
-}
-#portfolio_header{
-  border: 1px solid black;
-  border-radius: 10px 10px 0px 0px;
-  background-color: #222222 ;
-  color: #42BFD1;
-  height: 190px;
+  margin-top: 20px;
+  height: 800px;
+  background: url('/images/sublim.jpg')
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 .img_mystere{
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 2px;
 }
+              /*------Animation de texte----------*/
+.cd-intro-content h1,
+.cd-intro-content p,
+.cd-intro-content .cd-btn {
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.cd-intro-content h1 {
+  padding-top: 20px;
+  color: #42BFD1;
+  text-shadow:5px 5px 10px black;
+}
+.cd-intro-content p {
+  padding-left: 20px;
+  color: #42BFD1;
+  text-shadow:5px 5px 10px black;
+  text-transform: uppercase;
+}
+ 
+.bouncy.cd-intro-content h1 {
+  animation-name: cd-bounce-right;
+}
+ 
+.bouncy.cd-intro-content p {
+  animation-name: cd-bounce-left;
+}
+ 
+.bouncy.cd-intro-content h1,
+.bouncy.cd-intro-content p {
+  animation-duration: 0.6s;
+}
+ 
+.bouncy.cd-intro-content .cd-btn {
+  animation-name: cd-bounce-rotate;
+  animation-duration: 0.5s;
+}
+ 
+.bouncy.cd-intro-content .cd-btn.main-action {
+  animation-delay: 0.4s;
+}
+ 
+@keyframes cd-bounce-right {
+  0% {
+    opacity: .2;
+    transform: translateX(-200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-left {
+  0% {
+    opacity: .2;
+    transform: translateX(200px);
+  }
+  60% {
+    opacity: .7;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes cd-bounce-rotate {
+  0% {
+    opacity: .2;
+    transform: perspective(800px) rotateX(-80deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: perspective(800px) rotateX(20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0);
+  }
+}
+
+                /*--------Animation Invaders--------*/
+#invaders {
+    position: absolute;
+    -webkit-animation: invaders 20s 1 ease-in forwards;
+    animation: invaders 20s 1 ease-in forwards;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-name: invaders;
+}
+@keyframes invaders{
+0% {
+    bottom: -10%;
+    left: 30%;
+    -webkit-transform: rotate(-10deg);
+}
+40% {
+    transform: rotate(0deg);
+}
+60% {
+    transform: rotate(-8deg);
+}
+80% {
+    transform: rotate(0deg);
+}
+100% {
+    bottom: 110%;
+    left: 60%;
+    transform: rotate(8deg);
+}
+}
+
+
 /*-----------------------Page home----------------------------------------------*/
 
             /***------en tete----*****/
@@ -427,7 +550,6 @@ div.row:nth-child(6) {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-radius: 10px 10px 0px 0px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
     h1 {
       color:#42BFD1;
@@ -517,59 +639,7 @@ div.row:nth-child(6) {
 .logo_boostrap {
   max-width: 100px;
 }
-/*-------------test*/
-/*@keyframes invader {
-    0% {
-        propriété_à_animer: valeur_initiale;
-    }
-    50% {
-        propriété_à_animer: valeur_intermédiaire;
-    }
-    100% {
-        propriété_à_animer: valeur_finale;
-    }
-}
-#invader {
-    animation-name: invader;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}*/
-
-/*----------------------------------------------test2-------------------------------------*/
-#invaders {
-    position: absolute;
-    -webkit-animation: invaders 10s 1 ease-in forwards;
-    animation: invaders 10s 1 ease-in forwards;
-    animation-duration: 10s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    animation-name: invaders;
-}
-@keyframes invaders{
-0% {
-    bottom: -10%;
-    left: 40%;
-    -webkit-transform: rotate(-10deg);
-}
-40% {
-    transform: rotate(0deg);
-}
-60% {
-    transform: rotate(-8deg);
-}
-80% {
-    transform: rotate(0deg);
-}
-100% {
-    bottom: 110%;
-    left: 40%;
-    transform: rotate(8deg);
-}
-}
 
 
+/*-----------------------------------------test--------------------*/
 
