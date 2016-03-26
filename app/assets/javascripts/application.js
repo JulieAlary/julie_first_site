@@ -14,3 +14,52 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+//----------------param ScrollTo Porfolio--------------------------------------
+$(document).on('ready page:load', function ()  {
+$('a[href^="#container2"]').click(function(){  
+    var id = $(this).attr("href");
+    var offset = $(id).offset().top 
+    $('html, body').animate({scrollTop: offset}, 'slow'); 
+    return false;  
+}); 
+});
+$(document).on('ready page:load', function ()  {
+$('a[href^="#container3"]').click(function(){  
+    var id = $(this).attr("href");
+    var offset = $(id).offset().top 
+    $('html, body').animate({scrollTop: offset}, 'slow'); 
+    return false;  
+}); 
+});
+
+//--------------param Certif OpenClassRoom-----------------------------------
+$(document).on('ready page:load', function () {
+    $(".flip").click(function(){
+        $(".panel").slideToggle("slow");
+    });
+});
+$(document).on('ready page:load', function () {
+    $(".flip2").click(function(){
+        $(".panel2").slideToggle("slow");
+    });
+});
+$(document).on('ready page:load', function () {
+    $(".flip3").click(function(){
+        $(".panel3").slideToggle("slow");
+    });
+});
+//------------incone twitter-----------------//
+$(document).on('ready page:load', function () {
+    $(".flip4").click(function(){
+        $(".panel4").slideToggle("slow");
+    });
+});
+// -----------anim cv------------------------//
+$(document).on('ready page:load', function () {
+    $(".flip5").click(function(){
+        $(".panel5").slideToggle("slow");
+    });
+});
+
+

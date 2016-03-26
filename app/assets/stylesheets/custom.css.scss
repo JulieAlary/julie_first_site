@@ -429,8 +429,8 @@ div.row:nth-child(6) {
   background-size: cover;
   height:800px;
 }
-              /*------Animation de texte----------*/
-.cd-intro-content h1,
+              /*------------Animation de texte--------------*/
+.cd-intro-content h1,h6,h5
 .cd-intro-content p,
 .cd-intro-content .cd-btn {
   opacity: 0;
@@ -441,12 +441,21 @@ div.row:nth-child(6) {
   padding-top: 60px;
   color: #42BFD1;
   text-shadow:5px 5px 10px #42BFD1;
-  padding-left: 400px;
+  padding-left: 500px;
 }
-
+.cd-intro-content  h6 {
+  color: #42BFD1;
+  padding-left: 575px;
+  padding-top: 150px;
+  font-size: 1em;
+}
+.cd-intro-content  h5 {
+  padding-left: 800px;
+  color: #42BFD1;
+}
 .cd-intro-content p {
-  padding-left: 220px;
-  padding-top: 100px;
+  padding-left: 250px;
+  padding-top: 30px;
   color: #42BFD1;
   text-shadow:5px 5px 10px black;
   text-transform: uppercase;
@@ -454,7 +463,12 @@ div.row:nth-child(6) {
   text-shadow:5px 5px 10px #42BFD1;
 }
 
- 
+ .bouncy.cd-intro-content h6{
+  animation-name: cd-bounce-right;
+}
+.bouncy.cd-intro-content h5{
+  animation-name: cd-bounce-left;
+}
 .bouncy.cd-intro-content h1 {
   animation-name: cd-bounce-right;
 }
@@ -463,7 +477,7 @@ div.row:nth-child(6) {
   animation-name: cd-bounce-left;
 }
  
-.bouncy.cd-intro-content h1,
+.bouncy.cd-intro-content h1,h5,h6,
 .bouncy.cd-intro-content p {
   animation-duration: 0.6s;
 }
@@ -472,12 +486,16 @@ div.row:nth-child(6) {
   animation-name: cd-bounce-rotate;
   animation-duration: 0.5s;
 }
-
-.action-wrapper img {
-  padding-left: 30px;
-}
 .icone_site_builder {
   width:400px;
+  margin-top: -170px;
+}
+.pink_invader {
+  padding-left: 30px;
+  margin-top: -170px;
+}
+.icone_site_builder{
+  margin-top: -220px;
 }
  
 .bouncy.cd-intro-content .cd-btn.main-action {
