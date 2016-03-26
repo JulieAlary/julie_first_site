@@ -398,10 +398,12 @@ div.row:nth-child(6) {
   color: #42BFD1;
   height:30px;
 }
-/*-----------------Page Portfolio------------------------------------------------*/
+/*------------------------------------ Page Portfolio------------------------------------------------*/
+
+              /*--------------param conatainer -------------*/
 .container1{
-  margin-top: 20px;
   height: 800px;
+  margin-top: 20px;
   background: url('/images/sublim.jpg')
   no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -413,6 +415,20 @@ div.row:nth-child(6) {
 .img_mystere{
   border-radius: 2px;
 }
+
+#container2 {
+  background-color: #222222;
+  height:800px;
+}
+#container3{
+  background: url('/images/sublim2.jpg')
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:800px;
+}
               /*------Animation de texte----------*/
 .cd-intro-content h1,
 .cd-intro-content p,
@@ -421,17 +437,23 @@ div.row:nth-child(6) {
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
-.cd-intro-content h1 {
-  padding-top: 20px;
+.cd-intro-content  h1 {
+  padding-top: 60px;
   color: #42BFD1;
-  text-shadow:5px 5px 10px black;
+  text-shadow:5px 5px 10px #42BFD1;
+  padding-left: 400px;
 }
+
 .cd-intro-content p {
-  padding-left: 20px;
+  padding-left: 220px;
+  padding-top: 100px;
   color: #42BFD1;
   text-shadow:5px 5px 10px black;
   text-transform: uppercase;
+  font-size: 1.5em;
+  text-shadow:5px 5px 10px #42BFD1;
 }
+
  
 .bouncy.cd-intro-content h1 {
   animation-name: cd-bounce-right;
@@ -450,9 +472,17 @@ div.row:nth-child(6) {
   animation-name: cd-bounce-rotate;
   animation-duration: 0.5s;
 }
+
+.action-wrapper img {
+  padding-left: 30px;
+}
+.icone_site_builder {
+  width:400px;
+}
  
 .bouncy.cd-intro-content .cd-btn.main-action {
   animation-delay: 0.4s;
+  padding-left: 500px;
 }
  
 @keyframes cd-bounce-right {
@@ -467,6 +497,7 @@ div.row:nth-child(6) {
   100% {
     opacity: 1;
     transform: translateX(0);
+
   }
 }
 
