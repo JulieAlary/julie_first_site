@@ -417,6 +417,7 @@ div.row:nth-child(6) {
 }
 
 #container2 {
+  margin-top: -50px;
   background-color: #222222;
   height:800px;
 }
@@ -460,7 +461,7 @@ div.row:nth-child(6) {
   text-shadow:5px 5px 10px black;
   text-transform: uppercase;
   font-size: 1.5em;
-  text-shadow:5px 5px 10px #42BFD1;
+  text-shadow:5px 5px 10px black;
 }
 
  .bouncy.cd-intro-content h6{
@@ -691,4 +692,23 @@ div.row:nth-child(6) {
 
 
 /*-----------------------------------------test--------------------*/
+.col-xs-4 .col_bground{
+  background: url('/images/building.jpg')
+  no-repeat center center fixed;
+  height:150px;
+  width:150px;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 2px;
+}
+.col_first_line {
+  padding-top: 100px;
+}
+#container2 h1 {
+  padding-top: 100px;
+  color:#42BFD1;
+}
+
+
+
 
