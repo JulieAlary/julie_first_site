@@ -136,6 +136,7 @@ p {
   margin: 0 auto;
   opacity:0.8;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  width:300px;
 }
 .mon_parcours h3 {
       padding-top:5%;
@@ -555,27 +556,28 @@ p {
  
 
 /*****-------------------Pages parcours--------------------------**************/
+          /*------------param gene----------*/
 
-              /**---------partie cv----------***/
-                    /*param general*/
-.section_cv  h3 {
-  background-color: #222222;
-  color: #42BFD1;
-  border-radius: 10px 10px 0px 0px;
-  height: 40px;
+.section_cv, .section_logo, .section_open {
+  background: url(https://pixabay.com/static/uploads/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg)
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h3 {
+    color:#42BFD1;
+    text-shadow:5px 5px 10px black;
+    padding-top: 50px;
+  }
 }
 .section_cv {
-  border-radius: 10px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+  margin-top: 20px;
 }
-.foot_section {
-  border: 1px solid black;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #222222;
-  color: #42BFD1;
-  height:30px;
+.fa-file-text-o{
+  margin-top: 50px;
 }
-                      /*mise en page*/
+          /*------------mise en page cv--------*/
 .panel5, .flip5 {
     padding: 5px;
     text-align: center;
@@ -588,9 +590,7 @@ p {
 .flip5 {
    margin-top:-10px;
 }
-.logo_cv {
-  width: 150px;
-}
+
 .panel5 {
   background: url('/images/dark_background.jpg')no-repeat fixed;
   color: #42BFD1;
@@ -646,20 +646,16 @@ p {
   color:black;
   text-shadow:5px 5px 10px #42BFD1
 }
-              /*--------------section openClassRoom--------------*/
-.section_open > h3:nth-child(1){
-  background-color: #222222;
-  color:#42BFD1;
-  border-radius: 10px 10px 0px 0px;
-  height: 40px;
+/*-----------codecademy----------*/
+.img_codecademy{
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
-
-.img_open {
+.codecademy_first img, .codecademy_second img{
   display: block;
   margin:auto;
-  width:100px;
-  border-radius: 5px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
+.codecademy_first, .codecademy_second {
+  padding-top: 75px;
 }
 .img_codecademy {
   display: block;
@@ -667,7 +663,14 @@ p {
   width:100px;
   border-radius: 5px;
 }
-
+              /*--------------section openClassRoom--------------*/
+.img_open {
+  display: block;
+  margin:auto;
+  width:100px;
+  border-radius: 5px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+}
 .panel, .flip, .panel2, .flip2, .panel3, .flip3 {
     padding: 5px;
     text-align: center;
@@ -682,77 +685,15 @@ p {
     display: none;
     margin-bottom: 10px;
 }
+.panel img, .panel2 img, .panel3 img{
+    width:400px;
+    display: block;
+  margin:auto
+}
 .flip, .flip2, .flip3 {
    border-radius: 5px 5px 0px 0px;
    margin-bottom: 10px;
 }
-.section_open {
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
-}
-                    /*-----------logo langages page parcours----------*/
-.section_logo > h3:nth-child(1){
-  background-color: #222222;
-  color:#42BFD1;
-  border-radius: 10px 10px 0px 0px;
-  height: 40px;
-}
-.img_codecademy{
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-}
-
-.logo_javascript{
-  max-width: 110px;
-  margin-top: -5px;
-  height: 110px;
-  
-}
-.logo_html5 {
-  max-width: 100px;
-  
-}
-.logo_css3 {
-  max-width: 100px;
-  
-}
-.logo_jquery {
-  max-width: 100px;
-  margin-top: 30px;
-  
-}
-.logo_php5 {
-  max-width: 80px;
-  max-height: 110px;
-}
-.logo_ruby {
-  max-width: 100px;
-  margin-top: 30px;
-}
-.logo_ror {
-  max-width: 100px;
-  margin-top: 30px;
-  max-height: 100px;
-}
-.logo_git {
-  max-width: 100px;
-  margin-top: 30px;
-}
-div.row:nth-child(6) {
-  text-align: center;
-}
-.section_logo {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
-}
-.foot_codecademy{
-  border: 1px solid black;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #222222;
-  color: #42BFD1;
-  height:30px;
-}
-
 /*---------------------------Page contact ------------------------------*/
 .bground {
   background:url(https://pixabay.com/static/uploads/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg)
@@ -793,10 +734,10 @@ text-align: center;
 }
 /*----------------------------- footer -----------------------------------*/
 footer {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   background-color: #222222;
   color: #42BFD1;
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  /*box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);*/
   height:50px;
   text-align: center;
 }
