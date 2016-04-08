@@ -15,8 +15,6 @@
     7   =>  Page Parcours/section openclassroom
     8   =>  Page Parcours/section codecademy
     9   =>  Page Portfolio
-    
-
 
 /*--------------------------- universal----------------------------------- */
 
@@ -195,7 +193,7 @@ p {
 
               /*--------------param conatainer -------------*/
 .container1{
-  height: 800px;
+  max-height: 1000px;
   margin-top: 20px;
   background: url(https://pixabay.com/static/uploads/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg)
   no-repeat center center fixed; 
@@ -535,7 +533,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:900px;
+  max-height:1600px;
 }
 .container2 img {
   height:200px;
@@ -552,26 +550,33 @@ p {
 .last_section a, .site4 a{
   color:#42BFD1;
 }
-
- 
-
 /*****-------------------Pages parcours--------------------------**************/
           /*------------param gene----------*/
-
-.section_cv, .section_logo, .section_open {
+.section_cv, .section_open {
   background: url(https://pixabay.com/static/uploads/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg)
   no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1500px;
+  max-height: 1650px;
   h3 {
     color:#42BFD1;
     text-shadow:5px 5px 10px black;
     padding-top: 50px;
   }
 }
+.section_logo {
+  background: url(https://pixabay.com/static/uploads/photo/2015/08/04/09/00/backdrop-874452_960_720.jpg)
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#42BFD1;
+    text-shadow:5px 5px 10px black;
+}
+
 /* ------param gene section cv-----*/
 .section_cv {
   margin-top: 20px;
@@ -592,6 +597,9 @@ p {
   text-decoration: none;
   color:#222222;
 }
+.btn a:active{
+  color:#222222;
+}
 .btn {
   background-color: #222222;
 }
@@ -599,7 +607,13 @@ p {
   background-color: #42BFD1;
 }
 
-
+.arrow1 {
+  text-align: center;
+  padding-top: -50px;
+}
+.arrow1 .fa-arrow-down{
+  font-size:2em;
+}
           /*------------mise en page cv--------*/
 .panel5, .flip5 {
     padding: 5px;
@@ -616,9 +630,12 @@ p {
 
 .panel5 {
   background: url('/images/dark_background.jpg')no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #42BFD1;
   text-shadow:5px 5px 10px black;
-  height: 1200px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
   margin-top: 10px;
 }
@@ -670,21 +687,39 @@ p {
   text-shadow:5px 5px 10px #42BFD1
 }
 /*-----------codecademy----------*/
-.img_codecademy{
-  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-}
-.codecademy_first img, .codecademy_second img{
-  display: block;
-  margin:auto;
-}
-.codecademy_first, .codecademy_second {
-  padding-top: 75px;
-}
 .img_codecademy {
   display: block;
   margin:auto;
   width:100px;
   border-radius: 5px;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  margin-top: 2%;
+}
+
+.arrow2 .fa-arrow-down {
+  font-size:2em;
+}
+.arrow2 .fa-arrow-up {
+  font-size:2em;
+}
+.arrow2 {
+  text-align: center;
+  letter-spacing: 20px;
+}
+.codecademy h3 {
+  padding-top: 10%;
+}
+.logo_langage2 img{
+  display: block;
+  margin:auto;
+  padding-top: 20%;
+}
+.logo_langages {
+  padding-top: 5%;
+  img {
+    display: block;
+  margin:auto;
+  }
 }
               /*--------------section openClassRoom--------------*/
 .img_open {
@@ -694,14 +729,22 @@ p {
   border-radius: 5px;
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
 }
+.section_open {
+  padding-top:100px;
+  padding-bottom: 100px;
+}
 .panel, .flip, .panel2, .flip2, .panel3, .flip3 {
     padding: 5px;
     text-align: center;
     border: solid 1px black;
     max-width: 600px;
-    background-color: #222222;
     color: #42BFD1;
-   
+     box-shadow: -1px 2px 5px 1px #42BFD1; 
+}
+@media all {
+    .panel {
+      background: none;
+    }
 }
 .panel, .panel2, .panel3 {
     padding: 50px;
@@ -716,6 +759,15 @@ p {
 .flip, .flip2, .flip3 {
    border-radius: 5px 5px 0px 0px;
    margin-bottom: 10px;
+}
+.certif {
+  padding-top: 50px;
+}
+.arrow3 {
+  text-align: center;
+}
+.arrow3 .fa-arrow-up {
+  font-size:2em;
 }
 /*---------------------------Page contact ------------------------------*/
 .bground {
@@ -791,8 +843,10 @@ footer ul li {
   background-color: #222222;
   opacity: 0.9;
 }
-#logo{
-  color: #42BFD1;
+.navbar-inverse .navbar-brand {
+  color:#42BFD1;
+  text-transform: uppercase;
+  font-size: 1.7em;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #42BFD1; 
@@ -812,5 +866,24 @@ footer ul li {
 .nav > li:nth-child(4) > a:hover{
   color:black;
 }
-/*------------------test---------------------------*/
+/*-------------media queries----------------*/
 
+@media screen and (max-width: 1024px)
+{
+
+.logo_langages {
+  img {
+  display: block;
+  margin:auto;
+  padding-top: 5%;
+  }
+}
+.codecademy h3 {
+  padding-top: 100px;
+}
+.logo_langage2 img {
+  display: block;
+  margin:auto;
+  padding-top:5%;
+  }
+}
