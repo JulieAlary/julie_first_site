@@ -155,7 +155,7 @@ p {
 }
 .outil {
   margin-top: -20px;
-  background: url('/images/bois.jpeg')
+  background: url('/images/bois.jpg')
   no-repeat center center fixed; 
   height:600px;
   -webkit-background-size: cover;
@@ -262,9 +262,9 @@ p {
   animation-duration: 0.9s;
 }
 #icone_site_builder {
-  width:400px;
+  width:200px;
   margin-top:-200px;
-  margin-left:50px;
+  margin-left:100px;
 }
 #pink_invader {
   width:300px;
@@ -340,7 +340,6 @@ p {
    -o-transition: all 0.4s ease-in-out;
    -ms-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
-
 }
 .view-first h2 {
    -webkit-transform: translateY(-100px);
@@ -533,7 +532,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  max-height:1600px;
+  max-height:2200px;
 }
 .container2 img {
   height:200px;
@@ -868,9 +867,7 @@ footer ul li {
 }
 /*-------------media queries----------------*/
 
-@media screen and (max-width: 1024px)
-{
-
+@media screen and (max-width: 1024px) {
 .logo_langages {
   img {
   display: block;
@@ -880,10 +877,65 @@ footer ul li {
 }
 .codecademy h3 {
   padding-top: 100px;
-}
+  }
 .logo_langage2 img {
   display: block;
   margin:auto;
   padding-top:5%;
   }
+.view {
+  margin:20px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+.jumbotron, .container1, .section_cv, .bground {
+  margin-top: 70px;
+  }
+  .view {
+  margin:40px;
+  }
+}
+@media screen and (max-width: 640px) {
+.jumbotron, .container1, .section_cv, .bground {
+  margin-top: 10px
+  }
+  .view {
+  margin:7px;
+  }
+  .jumbotron h1 {
+    padding-top: 220px;
+  }
+  .cd-intro-content p {
+    padding-top: 260px;
+  }
+  .title_cv{
+    padding-top: 220px;
+  }
+  .contact_head h1 {
+    padding-top: 180px;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+
+.view {
+  margin-left:80px;
+  }
+}
+@media screen and (max-width: 320px) {
+
+.view {
+  margin-left: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
