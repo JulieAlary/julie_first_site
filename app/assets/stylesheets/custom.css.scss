@@ -179,16 +179,20 @@ p {
   padding-top: 50px;
   text-shadow:5px 5px 10px black;
   text-transform: uppercase;
+  color:#42BFD1;
 }
 .outil_title p {
   text-transform: uppercase;
   text-shadow:5px 5px 10px #42BFD1;
   font-weight: bold;
 }
-
 #logo_boostrap {
-  max-width: 100px;
+  max-width:90px;
 }
+#logo_jquery2 {
+  width:100px;
+}
+
 /*------------------------------------ Page Portfolio------------------------------------------------*/
 
               /*--------------param conatainer -------------*/
@@ -738,6 +742,9 @@ p {
   height:1100px;
   margin-top: 20px;
 }
+.bground h1, h5 {
+  color:#42BFD1;
+}
 .contact_head  {
   color: #42BFD1;
   text-shadow:5px 5px 10px black;
@@ -895,6 +902,9 @@ footer ul li {
   }
   .mon_parcours {
     max-height: 600px;
+  }
+  #logo_boostrap {
+    width:50px;
   }
 }
 /*---------------------test----------------------------*/
