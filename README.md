@@ -1,3 +1,3 @@
-== README
+# My first personnal Website
 
-My first personnal Website#julie_first_site
+### Create with ruby & ruby on rails to learn it
